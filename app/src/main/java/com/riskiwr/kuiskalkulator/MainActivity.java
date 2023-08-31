@@ -135,11 +135,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-
-        if(jawaban.equals(etJawaban.getText().toString())){
+        Double doubleValue = Double.parseDouble(etJawaban.getText().toString());
+        if(jawaban.equals(doubleValue.toString())){
             Intent intent = new Intent(this, ResultActivity.class);
             intent.putExtra("status", true);
-            intent.putExtra("jawaban", jawaban);
+            intent.putExtra("jawaban", doubleValue);
             startActivity(intent);
         }else{
             Intent intent = new Intent(this, ResultActivity.class);
