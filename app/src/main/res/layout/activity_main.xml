@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dadu_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/dadu_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/dadu_2"
+        app:layout_constraintStart_toEndOf="@+id/dadu_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_jawaban"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Jawaban"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plus" />
+
+    <Button
+        android:id="@+id/btn_cek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:text="Cek"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_jawaban" />
+
+    <Button
+        android:id="@+id/btn_acak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="Acak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cek" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dadu_1" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_plus"
+        app:layout_constraintStart_toEndOf="@+id/btn_plus"
+        app:layout_constraintTop_toTopOf="@+id/btn_plus" />
+
+    <Button
+        android:id="@+id/btn_kali"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_minus"
+        app:layout_constraintStart_toEndOf="@+id/btn_minus"
+        app:layout_constraintTop_toTopOf="@+id/btn_minus"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_bagi"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_kali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_kali" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
