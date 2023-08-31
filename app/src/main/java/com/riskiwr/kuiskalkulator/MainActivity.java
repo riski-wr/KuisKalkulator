@@ -101,8 +101,6 @@ public class MainActivity extends AppCompatActivity {
         // Set to view
         tvDaduSatu.setText(Double.toString(randomDaduSatu));
         tvDaduDua.setText(Double.toString(randomDaduDua));
-
-        btnMulai.setVisibility(View.GONE);
         btnCek.setVisibility(View.VISIBLE);
 
     }
